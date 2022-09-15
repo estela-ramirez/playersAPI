@@ -1,11 +1,11 @@
 <!-- Table of Contents -->
 # Table of Contents
 - [About the Project](#star2-about-the-project)
-  * [Postman Testing](#camera-screenshots)
+  * [Postman Testing](#movie-camera-testing)
   * [Tech Stack](#space_invader-tech-stack)
-  * [Methods](#chart_with_upwards_trend-analytics)
+  * [Methods](#large_blue_circle-methods)
   * [Run Locally](#running-run-locally)
-  * [Run Unit Tests](#running-tests)
+  * [Run Unit Tests](#running_woman-tests)
 - [Acknowledgements](#raised_hands-acknowledgements)
 
 
@@ -16,32 +16,28 @@
 * [Dataset](https://www.kaggle.com/datasets/haydenvenable/zillow-observed-rent-index-jan-2014-june-2021)
 
 <!-- Postman Testing -->
-### :camera: Screenshots
+### :movie_camera: Testing
 
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
 
-<details>
-   <summary>Web Server</summary>
-     <li><a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a></li>
-</details>
+<h4>Web Server</h4>
+<a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a>
 
-<details>
- <summary>DevOps</summary>
-   <ul>
-     <li><a href="https://www.docker.com/">Docker</a></li>
-   </ul>
-</details>
+
+<h4>DevOps<h4>
+<a href="https://www.docker.com/">Docker</a>
 
 <!-- Methods -->
-   
+### :large_blue_circle: Methods
+
 open endpoints require no Authentication.
 
-* [get dictionary of players](players.md) : `GET /api/players/`
-* [get player json object](playerID.md) : `GET /api/players/<playerID>`
-* [increment player weight by 1](weight.md) : `PUT /api/players/<playerID>/weight`
-* [increment player height by 1](height.md) : `PUT /api/players/<playerID>/height`
+* [get dictionary of players](/docs/players.md) : `GET /api/players/`
+* [get player json object](/docs/playerID.md) : `GET /api/players/<playerID>`
+* [increment player weight by 1](/docs/weight.md) : `PUT /api/players/<playerID>/weight`
+* [increment player height by 1](/docs/height.md) : `PUT /api/players/<playerID>/height`
 
 <!-- Run Locally -->
 ### :running: Run Locally
@@ -52,7 +48,17 @@ Clone the project
 ```
 
 <!-- Run Unit Tests -->
-### :running: Run Unit Tests 
+### :running_woman: Run Unit Tests 
+
+Run Flask app to have API running
+```bash
+  python main.py
+```
+Run Unit Tests
+```bash
+  cd tests/
+  python unit_test.py
+```
 
 <!-- Acknowledgments -->
 ## :raised_hands: Acknowledgements
