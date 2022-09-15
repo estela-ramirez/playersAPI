@@ -3,7 +3,7 @@ from load_data import csv_to_json
 
 app = Flask(__name__)
 
-csvFilePath = 'players.csv'
+csvFilePath = '/Users/EstelaRamirez/Desktop/players_API/players.csv'
 players_dict = csv_to_json(csvFilePath)
 
 
@@ -24,7 +24,7 @@ def get_movie(playerID):
     if playerID in players_dict:
         return players_dict[playerID]
     else:
-        return {}
+        return {"message": "error: player not found in DB"}, 404
 
 # given player's ID, increments a player's weight by 1
 # returns updated DB 
@@ -33,7 +33,7 @@ def increase_weight(playerID):
     if playerID in players_dict:
         players_dict[playerID]['weight'] += 1
     else:
-        return {}
+        return {"message": "error: player not found in DB"}, 404
     return players_dict
 
 # given player's ID, increments a player's height by 1
@@ -43,8 +43,7 @@ def increase_height(playerID):
     if playerID in players_dict:
         players_dict[playerID]['height'] += 1
     else:
-        # return "error: player not found in DB"
-        return {}
+        return {"message": "error: player not found in DB"}, 404
     return players_dict
 
 app.run(debug=True)

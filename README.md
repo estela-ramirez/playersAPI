@@ -3,7 +3,7 @@
 - [About the Project](#star2-about-the-project)
   * [Postman Testing](#movie-camera-testing)
   * [Tech Stack](#space_invader-tech-stack)
-  * [Methods](#large_blue_circle-methods)
+  * [Methods](#methods)
   * [Run Locally](#running-run-locally)
   * [Run Unit Tests](#running_woman-tests)
 - [Acknowledgements](#raised_hands-acknowledgements)
@@ -23,18 +23,17 @@
 
 <summary>
   <h4>Web Server</h4>
-  <ul><a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a><il>
+  - <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a>
 </summary>
 
 <summary>
   <h4>DevOps<h4>
-  <ul><a href="https://www.docker.com/">Docker</a><ul>
+  - <a href="https://www.docker.com/">Docker</a>
 </summary>
 
 <!-- Methods -->
-### :large_blue_circle: Methods
+### : Methods
 
-open endpoints require no Authentication.
 
 * [get list of players](/docs/players.md) : `GET /api/players/`
 * [get player info](/docs/playerID.md) : `GET /api/players/<playerID>`
@@ -52,7 +51,7 @@ Clone the project
 <!-- Run Unit Tests -->
 ### :running_woman: Run Unit Tests 
 
-Run Flask app to have API running
+Start API 
 ```bash
   python main.py
 ```

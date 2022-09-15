@@ -1,6 +1,6 @@
 # List of Players
 
-**URL** : `/api/players/`
+**URL** : `/api/players`
 
 **Method** : `GET`
 
@@ -45,7 +45,7 @@
 
 ## Notes
 
-if the playerID does not exist, returns an empty dictionary
+if there are no players, returns an empty dictionary
 
 ```json
 {}

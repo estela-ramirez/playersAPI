@@ -41,6 +41,10 @@
 }
 ```
 
-if the playerID is not valid
+## Error Response
 
-`{}`
+**Condition** : playerID does not exist in DB
+
+**Code** : `404`
+
+**Content** : `{}`
