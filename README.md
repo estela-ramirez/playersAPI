@@ -1,9 +1,8 @@
 <!-- Table of Contents -->
 # Table of Contents
-- [About the Project](#star2-about-the-project)
-  * [Postman Testing](#movie-camera-testing)
+- [About the Project](about-the-project)
   * [Tech Stack](#space_invader-tech-stack)
-  * [Methods](#methods)
+  * [Methods](#star2-methods)
   * [Run Locally](#running-run-locally)
   * [Run Unit Tests](#running_woman-tests)
 - [Acknowledgements](#raised_hands-acknowledgements)
@@ -13,26 +12,17 @@
 ## :star2: About the Project
 <p>This REST API allows access to the data in the players.csv file. </p>
 
-
-<!-- Postman Testing -->
-### :movie_camera: Testing
-
-
 <!-- TechStack -->
 ### :space_invader: Tech Stack
 
-<summary>
-  <h4>Web Server</h4>
-  - <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a>
-</summary>
+<h4>Web Server</h4>
+- <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a>
 
-<summary>
   <h4>DevOps<h4>
-  - <a href="https://www.docker.com/">Docker</a>
-</summary>
+- <a href="https://www.docker.com/">Docker</a>
 
 <!-- Methods -->
-### : Methods
+### :star2: Methods
 
 
 * [get list of players](/docs/players.md) : `GET /api/players/`

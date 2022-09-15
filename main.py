@@ -1,17 +1,19 @@
 from flask import Flask, request
 from load_data import csv_to_json
+import os
 
 app = Flask(__name__)
 
-csvFilePath = '/Users/EstelaRamirez/Desktop/players_API/players.csv'
-players_dict = csv_to_json(csvFilePath)
+try:
+    csvFilePath = 'players.csv'
+    players_dict = csv_to_json(csvFilePath)
+except FileNotFoundError:
+    print("File name or path are incorrect")
 
 
 @app.route("/")
 def home():
     return "API is running"
-
-# handle empty data 
 
 # returns the list(dict) of all players
 @app.route("/api/players/", methods=['GET'])
@@ -46,4 +48,6 @@ def increase_height(playerID):
         return {"message": "error: player not found in DB"}, 404
     return players_dict
 
-app.run(debug=True)
+# app.run(debug=True)
+port = int(os.environ.get('PORT', 5000))
+app.run(debug=True, host='0.0.0.0', port=port)
