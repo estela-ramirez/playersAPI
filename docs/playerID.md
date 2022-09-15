@@ -1,4 +1,4 @@
-# Login
+# Player Info
 
 **URL** : `/api/players/<playerID>`
 
@@ -43,5 +43,4 @@
 
 if the playerID is not valid
 
-```json
-{}
+`{}`

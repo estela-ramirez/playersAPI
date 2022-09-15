@@ -1,4 +1,4 @@
-# Login
+# Increment Height by 1
 
 **URL** : `/api/players/<playerID>/height`
 

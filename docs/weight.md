@@ -1,4 +1,4 @@
-# Login
+# Increment Weight by 1
 
 **URL** : `/api/players/<playerID>/weight`
 

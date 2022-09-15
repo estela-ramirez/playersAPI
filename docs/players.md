@@ -1,4 +1,4 @@
-# Login
+# List of Players
 
 **URL** : `/api/players/`
 
@@ -47,7 +47,6 @@
 
 if the playerID does not exist, returns an empty dictionary
 
-```
-json
+```json
 {}
 ````

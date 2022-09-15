@@ -13,7 +13,6 @@
 ## :star2: About the Project
 <p>This REST API allows access to the data in the players.csv file. </p>
 
-* [Dataset](https://www.kaggle.com/datasets/haydenvenable/zillow-observed-rent-index-jan-2014-june-2021)
 
 <!-- Postman Testing -->
 ### :movie_camera: Testing
@@ -22,20 +21,23 @@
 <!-- TechStack -->
 ### :space_invader: Tech Stack
 
-<h4>Web Server</h4>
-<a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a>
+<summary>
+  <h4>Web Server</h4>
+  <ul><a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a><il>
+</summary>
 
-
-<h4>DevOps<h4>
-<a href="https://www.docker.com/">Docker</a>
+<summary>
+  <h4>DevOps<h4>
+  <ul><a href="https://www.docker.com/">Docker</a><ul>
+</summary>
 
 <!-- Methods -->
 ### :large_blue_circle: Methods
 
 open endpoints require no Authentication.
 
-* [get dictionary of players](/docs/players.md) : `GET /api/players/`
-* [get player json object](/docs/playerID.md) : `GET /api/players/<playerID>`
+* [get list of players](/docs/players.md) : `GET /api/players/`
+* [get player info](/docs/playerID.md) : `GET /api/players/<playerID>`
 * [increment player weight by 1](/docs/weight.md) : `PUT /api/players/<playerID>/weight`
 * [increment player height by 1](/docs/height.md) : `PUT /api/players/<playerID>/height`
 
