@@ -35,7 +35,8 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/estela-ramirez/microservice.git
+  docker pull erami151/flask_container
+  python main.py
 ```
 
 <!-- Run Unit Tests -->
