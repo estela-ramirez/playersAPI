@@ -36,8 +36,9 @@ Clone the project
 
 ```bash
   docker pull erami151/flask_container
-  python main.py
+  docker run -p 5000:5000 -d erami151/flask_container
 ```
+ Go to http://localhost:5000
 
 <!-- Run Unit Tests -->
 ### :running_woman: Run Unit Tests 
